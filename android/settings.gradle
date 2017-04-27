@@ -1,0 +1,3 @@
+rootProject.name = 'Chore_Manager'
+
+include ':app'
