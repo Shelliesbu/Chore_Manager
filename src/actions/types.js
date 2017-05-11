@@ -3,3 +3,8 @@ export const PASSWORD_CHANGED = 'password_changed';
 export const LOGIN_USER_SUCCESS = 'login_user_success';
 export const LOGIN_USER_FAIL = 'login_user_fail';
 export const LOGIN_USER = 'login_user';
+
+export const CHORE_UPDATE = 'chore_update';
+export const CHORE_CREATE = 'chore_create';
+export const CHORES_FETCH_SUCCESS = 'chores_fetch_success';
+export const CHORE_SAVE_SUCCESS = 'chore_save_success';

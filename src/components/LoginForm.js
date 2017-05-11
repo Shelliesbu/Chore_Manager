@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Card, CardSection, Input, Button, Spinner } from './common';
@@ -60,6 +60,11 @@ class LoginForm extends Component {
                  <CardSection>
                     {this.renderButton()}
                  </CardSection>
+
+                <CardSection>
+                    <Image style={styles.imageStyle} source={require('./mop.jpg')} />
+                </CardSection>
+
             </Card>
         );
     }
@@ -70,7 +75,13 @@ const styles = {
         fontSize: 20,
         alignSelf: 'center',
         color: 'red'
-    }
+    },
+
+       imageStyle: {
+          height: 250,
+          flex: 1,
+          width: null
+          }
 };
 
 const mapStateToProps = state => {
